@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Clouds.png" />
+    <None Remove="Images\Meeting.png" />
+    <None Remove="Images\Officeman.png" />
+    <None Remove="Images\Senzubean.png" />
+    <None Remove="Images\Sol2.png" />
+    <None Remove="Images\Worm.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Fonts\" />
+    <Folder Include="MVVM\Model\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Clouds.png" />
+    <Resource Include="Images\Meeting.png" />
+    <Resource Include="Images\Officeman.png" />
+    <Resource Include="Images\Senzubean.png" />
+    <Resource Include="Images\Sol2.png" />
+    <Resource Include="Images\Worm.png" />
+  </ItemGroup>
+
+</Project>

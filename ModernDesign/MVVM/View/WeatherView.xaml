@@ -1,0 +1,69 @@
+﻿<UserControl x:Class="ModernDesign.MVVM.View.WeatherView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ModernDesign.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+
+        <Border Background="SkyBlue"
+                CornerRadius="20">
+
+            <StackPanel Orientation="Horizontal">
+
+                <StackPanel Height="300" VerticalAlignment="Top">
+                    
+                    <Image Width="250"
+                           Height="250"
+                           Source="/Images/Sol2.png"
+                           VerticalAlignment="Top"
+                           HorizontalAlignment="Right"
+                           />
+                    <TextBlock x:Name="CityLabel"
+                            Foreground="White"
+                            FontSize="20" Height="28" Width="100"/>
+                    
+                    <TextBlock x:Name="TemperatureAndDescriptionLabel"
+                           Foreground="White"
+                           FontSize="20" Height="69" Width="256"/>
+
+                </StackPanel>
+
+
+                <StackPanel VerticalAlignment="Top" Height="220">
+                    <TextBox x:Name="CityTextBox" 
+                                  Width="200" 
+                                  Height="30"
+                             Margin="20"/>
+
+                    <Button Content="Get Weather"
+                                 Width="100"
+                                 Height="30"
+                                 Click="GetWeatherButton_Click"/>
+
+                    <Image Width="242"
+                           Height="152"
+                           Source="/Images/Clouds.png"
+                           VerticalAlignment="Top"/>
+
+                </StackPanel>
+
+                <StackPanel Height="50" VerticalAlignment="Top">
+                    <TextBlock Text="Enter a city!"
+                               Foreground="White"
+                               FontSize="20"
+                               Margin="20"
+                               VerticalAlignment="Top"/>
+
+                </StackPanel>
+
+            </StackPanel>
+
+
+
+
+        </Border>
+    </Grid>
+</UserControl>

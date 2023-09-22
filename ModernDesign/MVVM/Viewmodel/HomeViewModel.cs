@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ModernDesign.MVVM.Viewmodel
+{
+    class HomeViewModel
+    {
+        public static implicit operator int(HomeViewModel v)
+        {
+            throw new NotImplementedException();
+        }
+    }
+}
